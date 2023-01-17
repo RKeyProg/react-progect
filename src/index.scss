@@ -1,0 +1,51 @@
+@import-normalize;
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'CAT Linz';
+  src: url('./fonts/CATLinz.woff2') format('woff2'),
+      url('./fonts/CATLinz.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$container-width: 1230px;
+$z-container: 5;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #161616;
+  color: #F9F4F1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button, input {
+  font-family: 'Mulish';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: $container-width;
+  margin: 0 auto;
+  position: relative;
+  z-index: $z-container;
+}
